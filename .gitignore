@@ -1,0 +1,34 @@
+# Local business configuration and generated data
+/sifTraffic.json
+/local/
+/private/
+/data/
+/reports/
+/exports/
+/screenshots/
+/backups/
+*.local.*
+*.csv
+*.xlsx
+*.xls
+*.jsonl
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.pdf
+*.log
+# Credentials and session files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+cookies*.json
+*token*.json
+node_modules/
+.DS_Store
+Thumbs.db
+

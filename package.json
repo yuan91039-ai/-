@@ -1,0 +1,14 @@
+{
+  "name": "amazon-uk-rank-monitor",
+  "version": "0.7.1",
+  "private": true,
+  "type": "module",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "repository": {"type": "git", "url": "https://github.com/yuan91039-ai/-.git"},
+  "scripts": {
+    "test": "node --test",
+    "check:privacy": "node scripts/check-public.mjs"
+  },
+  "engines": {"node": ">=20"}
+}
+

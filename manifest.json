@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "英国站关键词排名监控",
+  "version": "0.7.1",
+  "description": "按 ASIN 独立选词监控 Amazon UK 自然排名与可见 SP 广告位置，展示选词依据及历史趋势。",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "alarms",
+    "storage",
+    "scripting",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://www.amazon.co.uk/*"
+  ],
+  "background": {
+    "service_worker": "background.mjs",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.co.uk/s*"
+      ],
+      "js": [
+        "searchOverlay.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "查看关键词排名监控",
+    "default_popup": "popup.html"
+  },
+  "options_page": "dashboard.html"
+}
+
